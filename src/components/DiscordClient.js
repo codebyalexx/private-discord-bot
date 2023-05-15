@@ -1,4 +1,5 @@
 import {Client} from 'discord.js'
+import loadEvents from '../utils/loadEvents.js'
 
 class DiscordClient {
 	constructor(clientToken, clientOptions) {
@@ -6,11 +7,12 @@ class DiscordClient {
 		this.opts = clientOptions
 	}
 
-	init() {
+	async init() {
 		/* It's creating the discord instance */
 		this.client = new Client(this.opts)
 
-		/* It's loading the events TODO */
+		/* It's loading the events */
+		await loadEvents(this)
 
 		/* It's loading the slash commands TODO */
 
