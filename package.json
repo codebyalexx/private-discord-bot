@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0"
+  },
+  "name": "personnalbot",
+  "description": "The bot of my personal discord server\n",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "alexandrelg2022",
+  "license": "ISC",
+  "type": "module"
+}
