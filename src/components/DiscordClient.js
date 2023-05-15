@@ -1,5 +1,6 @@
-import {Client} from 'discord.js'
+import {Client, Collection} from 'discord.js'
 import loadEvents from '../utils/loadEvents.js'
+import loadCommands from '../utils/loadCommands.js'
 
 class DiscordClient {
 	constructor(clientToken, clientOptions) {
@@ -15,6 +16,8 @@ class DiscordClient {
 		await loadEvents(this)
 
 		/* It's loading the slash commands TODO */
+		this.client.commands = new Collection()
+		await loadCommands(this)
 
 		/* It's sign in to the Discord Bot to the Discord API */
 		console.log('Now connecting to the Discord API...')
