@@ -2,7 +2,8 @@
   "dependencies": {
     "discord-api-types": "^0.37.42",
     "discord.js": "^14.11.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "redis": "^4.7.0"
   },
   "devDependencies": {
     "eslint": "^8.40.0"
